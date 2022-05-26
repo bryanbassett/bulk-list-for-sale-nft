@@ -363,7 +363,7 @@ style.configure('Wild.TRadiobutton',    # First argument is the name of style. N
         )      
 
 duration_date = Frame(root, padx=0, pady=1)
-duration_date.grid(row=5, column=1, sticky=(N, W, E, S))
+duration_date.grid(row=6, column=1, sticky=(N, W, E, S))
 ttk.Radiobutton(duration_date, text='1 day', variable=duration_value, value=1,  command=save_duration, width=8,).grid(row=0, column=1)
 ttk.Radiobutton(duration_date, text="3 days", variable=duration_value, value=3, command=save_duration, width=8, ).grid(row=0, column=2)
 ttk.Radiobutton(duration_date, text="7 days", variable=duration_value, value=7,  command=save_duration, width=8,).grid(row=0, column=3)
@@ -374,19 +374,19 @@ ttk.Radiobutton(duration_date, text="120 days", variable=duration_value, value=1
 ttk.Radiobutton(duration_date, text="150 days", variable=duration_value, value=150, command=save_duration, width=8,).grid(row=1, columnspan=1, column=3)
 ttk.Radiobutton(duration_date, text="180 days", variable=duration_value, value=180,  command=save_duration, width=8,).grid(row=1, columnspan=1, column=4)
 duration_date.label = Label(root, text="Duration:", anchor="w", width=20, height=1 )
-duration_date.label.grid(row=5, column=0, padx=12, pady=2)
+duration_date.label.grid(row=6, column=0, padx=12, pady=2)
 
 
 
 button_save = ttk.Button(root, width=50,   text="Save This Form", command=save) 
-button_save.grid(row=6, column=1, pady=2)
+button_save.grid(row=7, column=1, pady=2)
 open_browser = ttk.Button(root, width=50,   text="Open Chrome Browser (close any other chrome browser first)", command=open_chrome_profile)
-open_browser.grid(row=7, column=1, pady=2)
+open_browser.grid(row=8, column=1, pady=2)
 button_start = ttk.Button(root, width=50, text="Start", command=main_program_loop, style="Accentbutton")
 
-button_start.grid(row=8, column=1, pady=2)
+button_start.grid(row=9, column=1, pady=2)
 footer = ttk.Button(root,  width=60, text='Do you you want to show support? \n Buy one of my NFTs. Thanks.',  command=coffeeURL, style="Togglebutton" )
-footer.grid(row=9, columnspan=2, padx=31, pady=31)
+footer.grid(row=10, columnspan=2, padx=31, pady=31)
 
 #####BUTTON ZONE END#######
 root.mainloop()
